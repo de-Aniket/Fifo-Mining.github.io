@@ -1,0 +1,701 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Header section Css */
+
+.head-top {
+    background-color: #fbb040;
+    height: fit-content;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+.left-header {
+    display: flex;
+    gap: 120px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.icon {
+    max-width: 240px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-search {
+    position: relative;
+}
+
+.header-search {
+    border-radius: 30px;
+    padding: 4px 8px 4px 30px;
+    border: 1px solid #ffffff;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    color: #fff;
+}
+
+.icon-search button {
+    position: absolute;
+    left: 10px;
+    background: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dark-login {
+    color: #ffffff;
+    background: #000000;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 22px;
+}
+
+.fa-sign-in {
+    font-size: 13px;
+}
+
+.modal-content {
+    background-color: #fbb040;
+}
+
+/* media query for header begins here  */
+
+@media screen and (max-width:1070px) {
+    .left-header {
+        display: flex;
+        gap: 20px;
+    }
+
+    .icon {
+        display: flex;
+        max-width: 140px !important;
+        align-items: center !important;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .header-search {
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width:487px) {
+
+    .right-header {
+        gap: 5px !important;
+    }
+
+    .header-search {
+        max-width: 80px;
+        padding: 0px !important;
+        margin-top: 5px;
+    }
+
+     .icon-search button {
+      position: absolute;
+      left: 10px;
+      background: transparent;
+      border: none;
+      top: 48%;
+      transform: translateY(-50%);
+  }
+
+  .dark-login {
+      color: #ffffff;
+      background: #000000;
+      border-radius: 10px;
+      border: none;
+      font-size: 12px;
+      padding: -1px 2px !important;
+  }
+}
+
+
+
+/* middle icon at header  */
+
+.middle {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.middle .frame2 {
+    max-width: 80px;
+}
+
+@media screen and (max-width:991px) {
+
+    .middle .frame2 {
+        max-width: 60px !important;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .middle .frame2 {
+        max-width: 40px !important;
+    }
+
+}
+
+
+/* toggle section starts here */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: #fbb040;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 45px;
+    font-size: 40px;
+    
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 15px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: -10px;
+    right: 35px;
+    }
+  }
+
+  .onsmall{
+    display: none;
+} 
+
+@media screen and (max-width:991px) {
+    .onsmall{
+        display: block;
+    }   
+    .links{
+        display: none;
+    }
+} 
+
+
+
+/* australia's part   */
+
+.top-banner {
+    position: relative;
+    left: 0;
+    /* margin-top: 12%; */
+    width: 100%;
+    height: 500px;
+
+}
+
+.head-banner {
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+
+}
+
+
+.mining {
+    position: relative;
+    /* margin-top: -10%; */
+    /* width: 100%; */
+    /* padding: 10px 30px 50px; */
+    /* text-align: center; */
+    /* z-index: 99; */
+    /* margin-top: -40px; */
+    /* border: 1px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 6px #2525256b;
+    */
+}
+
+.mining1 {
+    position: relative;
+    top: -30px;
+    font-size: 34px;
+    font-weight: 700;
+    background-color: #fbb040;
+    border-radius: 60px;
+    padding: 14px 30px;
+    width: fit-content;
+    margin: auto;
+    /* margin-top: -10px; */
+}
+
+.mining2 {
+    position: relative;
+    top: -22px;
+    font-weight: 700;
+    background-color: #fbb040;
+    margin-top: -22px !important;
+    padding-top: 20px !important;
+    font-size: 22px;
+    color: #ffffff;
+    border-radius: 60px;
+    padding: 14px 30px;
+    width: fit-content;
+    margin: auto;
+}
+
+.button1 {
+    position: relative;
+    top: 50px;
+}
+
+@media screen and (max-width:991px) {
+
+    .mining1 {
+        font-size: 26px;
+    }
+
+    .mining2 {
+        font-size: 18px;
+    }
+
+    .dark {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .button1 {
+        position: relative;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .mining1 {
+        font-size: 15px;
+        /* padding: 8px 20px; */
+    }
+
+    .mining2 {
+        font-size: 14px;
+        /* margin-top: -15px; */
+        top: -20px;
+        padding: 8px 15px;
+    }
+}
+
+/* rating section starts here  */
+.reviews {
+    position: relative;
+    top: -160px;
+}
+
+@media screen and (max-width:991px) {
+    .reviews {
+        top: -200px;
+        margin: 0px auto 60px;
+    }
+}
+
+@media screen and (max-width:1044px) {
+    .reviews {
+        position: relative;
+        /* top: -50px; */
+    }
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ekor {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px #6a6a6a80;
+}
+ 
+@media screen and (max-width:767px) {
+    .ekor{
+        margin-top: 25px;
+    }
+    
+}
+.upper {
+    padding: 30px 30px 20px;
+}
+
+.upper h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-weight: 600 !important;
+}
+
+.title-icon {
+    width: 40px;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bhp-ratings li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.star i {
+    margin: 0px 3px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fbb040 !important;
+}
+
+.bhp-ratings li+li {
+    border-top: 1px solid #dedede;
+}
+
+.lower {
+    padding: 20px 30px 30px;
+    background: #fbb040;
+}
+
+.title-bottom {
+    font-weight: 600;
+    color: #fff;
+    font-size: 21px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* about your review section2 css  */
+
+.review-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.section2-heading {
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 2.1rem;
+}
+.text-start{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+@media screen and (max-width:991px) {
+
+    .section2-heading {
+        display: none;
+    }
+
+    .text-start {
+        display: none;
+    }
+
+    .frame2 {
+        max-width: 60px !important;
+        margin: auto auto 20px;
+    }
+
+    .dark {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+    }
+}
+
+.frame2 {
+    max-width: 80px;
+    margin: auto auto 20px;
+}
+
+
+.dark {
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.dark:hover {
+    background-color: #fbb040;
+    color: #000000;
+}
+
+@media screen and (max-width:570px) {}
+
+
+
+/* create rwview section-3  */
+
+.section-padding {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.create {
+    text-align: center;
+    margin: 40px auto 100px px;
+    display: inline-block;
+    width: 100%;
+}
+
+.create-btn {
+    margin-top: 60px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.create-btn:hover {
+    background-color: #fbb040;
+    color: #000000;
+}
+
+.rev {
+    position: relative;
+    left: 0;
+    margin-top: 12%;
+    width: 100%;
+    height: fit-content;
+    background: #fbb040;
+    z-index: -1;
+}
+
+.banner1 {
+    position: absolute;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
+.newcrest {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head{
+    margin-top: 25px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.latest {
+    position: relative;
+    margin-top: -10%;
+    width: 100%;
+    padding: 10px 30px 50px;
+    text-align: left;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 6px #2525256b;
+    background-color: #fbb040;
+}
+
+.toup {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.toup1 {
+    margin-top: 40%;
+    margin-left: 2%;
+}
+
+.toup2 {
+    margin-top: 20%;
+    margin-left: 2%;
+}
+
+@media screen and (max-width:992px) {
+    .newcrest {
+        width: 100%;
+        padding-top: 40%;
+    }
+
+    .toup1 {
+        margin-top: -7%;
+        margin-left: 0%;
+    }
+
+    .toup2 {
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+
+
+    .rev {
+        height: fit-content;
+
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .newcrest {
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    .rev {
+        height: fit-content;
+
+    }
+
+    .toup1 {
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+}
+
+
+/* create review section ends here  */
+
+
+
+/* footer section-4 css  */
+.section-4{
+    background: #f4f6f8;
+}
+
+.foot ul {
+    display: flex;
+    list-style: none;
+}
+
+.foot a {
+    text-decoration: none;
+    padding: 8px;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .dark2 {
+        border-radius: 50%;
+        padding: 0px 8px;
+        font-weight: bold;
+        background-color: #000000;
+        float: right;
+        font-size: 5px;
+        position: relative;
+        top: -45px;
+    } */
+
+
+/* .copy{
+    position: relative;
+    top: -60px;
+}
+.copy ul {
+    display: flex;
+    list-style: none;
+}
+
+.copy a {
+    font-size: 13px;
+    padding: 5px;
+    color: #131313;
+}  */
